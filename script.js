@@ -1,6 +1,5 @@
 let maxIterations;
 let x = 0;
-let y = 0;
 
 function setup() {
 	createCanvas(1050, 600);
@@ -10,21 +9,18 @@ function setup() {
 }
 
 function draw() {
-	let c = new Complex(map(x, 0, width, -2, 1), map(y, 0, height, -1, 1));
-	// console.log(c.getMandelbrotSetIteration());
-	let mbsi = c.getMandelbrotSetIteration();
-	if (mbsi <= maxIterations) {
-		stroke(map(mbsi, 0, maxIterations, 0, 360), 255, 255);
-	} else {
-		stroke(0, 0, 0);
+	for (let y = 0; y < height; y++) {
+		let c = new Complex(map(x, 0, width, -2, 1), map(y, 0, height, -1, 1));
+		// console.log(c.getMandelbrotSetIteration());
+		let mbsi = c.getMandelbrotSetIteration();
+		if (mbsi <= maxIterations) {
+			stroke(map(mbsi, 0, maxIterations, 0, 360), 255, 255);
+		} else {
+			stroke(0, 0, 0);
+		}
+		point(x, y);
 	}
-	point(x, y);
-
-	y++;
-	if (y >= height) {
-		y = 0;
-		x++;
-	}
+	x++;
 	if (x >= width) {
 		noLoop();
 	}
