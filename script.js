@@ -1,7 +1,7 @@
 let maxIterations;
 
 function setup() {
-	createCanvas(600, 600);
+	createCanvas(1050, 600);
 	background(0);
 	colorMode(HSB);
 	maxIterations = 25;
