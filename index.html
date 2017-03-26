@@ -8,9 +8,9 @@
 <p>Find out more on the <a href="https://github.com/manuelgu/InternetDoesWebsite">Github page</a></p>
 <script>
   window.onload = () => {
-    let scripts = ["https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.min.js", "script.js"];
-    for(let script of scripts) {
-      let tag = document.createElement("script");
+    const scripts = ["https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.min.js", "script.js"];
+    scripts.forEach(script => {
+      const tag = document.createElement("script");
       tag.setAttribute("src", script);
       document.body.appendChild(tag);
     }
