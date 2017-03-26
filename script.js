@@ -5,7 +5,7 @@ function setup() {
 	createCanvas(1050, 600);
 	background(0);
 	colorMode(HSB);
-	maxIterations = 50;
+	maxIterations = 100;
 }
 
 new KonamiCode(function() {
