@@ -8,6 +8,10 @@ function setup() {
 	maxIterations = 25;
 }
 
+new KonamiCode(function() {
+	window.location.href = "https://youtu.be/9u9vlj8CgS0?t=5s";
+});
+
 function draw() {
 	for (let y = 0; y < height; y++) {
 		let c = new Complex(map(x, 0, width, -2, 1), map(y, 0, height, -1, 1));
