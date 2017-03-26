@@ -1,20 +1,20 @@
 <html>
 <head>
   <title>InternetDoesWebsite</title>
+  <script>
+    window.onload = () => {
+      const scripts = ["https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.min.js", "script.js"];
+      scripts.forEach(script => {
+        const tag = document.createElement("script");
+        tag.setAttribute("src", script);
+        document.body.appendChild(tag);
+      }
+    }
+  </script>
 </head>
 <body>
 
 <h1>Internet Does Website</h1>
 <p>Find out more on the <a href="https://github.com/manuelgu/InternetDoesWebsite">Github page</a></p>
-<script>
-  window.onload = () => {
-    const scripts = ["https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.7/p5.min.js", "script.js"];
-    scripts.forEach(script => {
-      const tag = document.createElement("script");
-      tag.setAttribute("src", script);
-      document.body.appendChild(tag);
-    }
-  }
-</script>
 </body>
 </html>
