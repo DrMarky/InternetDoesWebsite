@@ -8,7 +8,7 @@ function setup() {
 	maxIterations = 100;
 }
 
-new KonamiCode(function() {
+new KonamiCode(() => {
 	window.location.href = "https://youtu.be/9u9vlj8CgS0?t=5s";
 });
 
