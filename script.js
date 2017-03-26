@@ -5,10 +5,10 @@ function setup() {
 	createCanvas(1050, 600);
 	background(0);
 	colorMode(HSB);
-	maxIterations = 25;
+	maxIterations = 100;
 }
 
-new KonamiCode(function() {
+new KonamiCode(() => {
 	window.location.href = "https://youtu.be/9u9vlj8CgS0?t=5s";
 });
 
