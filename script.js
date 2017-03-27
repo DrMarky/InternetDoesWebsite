@@ -15,7 +15,6 @@ new KonamiCode(function() {
 function draw() {
 	for (let y = 0; y < height; y++) {
 		let c = new Complex(map(x, 0, width, -2, 1), map(y, 0, height, -1, 1));
-		// console.log(c.getMandelbrotSetIteration());
 		let mbsi = c.getMandelbrotSetIteration();
 		if (mbsi <= maxIterations) {
 			stroke(map(mbsi, 0, maxIterations, 0, 360), 255, 255);
